@@ -24,7 +24,11 @@ const Home: React.FC = () => {
     router.push("/search-results");
   };
 
+import Image from "next/image";
+import Vacancies from "../components/vacancies";
+
   return (
+
     <>
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
@@ -116,6 +120,9 @@ const Home: React.FC = () => {
         </div>
       </div>
     </>
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <Vacancies />
+    </div>
   );
 };
 
