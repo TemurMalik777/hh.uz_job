@@ -7,6 +7,9 @@ import SearchBar from "../components/SearchBar";
 import { BankOutlined, UserOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import Vacancies from "../components/vacancies";
 
+import CompanyManagementPanel from "./profiles/company/page";
+
+
 const Home: React.FC = () => {
   const router = useRouter();
 
@@ -24,7 +27,6 @@ const Home: React.FC = () => {
     // For now, redirect to login or search results page
     router.push("/search-results");
   };
-
 
   return (
     <>
