@@ -4,7 +4,7 @@ import { ParamsType, Vacancy } from "../types";
 
 export const vacancyService = {
   async getVacancies(params: ParamsType) {
-    const res = await apiConfig().getRequest(ApiUrls.VACANCIES, params);
+    const res = await apiConfig().getRequest(ApiUrls.VACANCIES);
     return res;
   },
 

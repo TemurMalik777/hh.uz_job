@@ -6,7 +6,9 @@ import { useRouter } from "next/navigation";
 import SearchBar from "../components/SearchBar";
 import { BankOutlined, UserOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import Vacancies from "../components/vacancies";
+
 import CompanyManagementPanel from "./profiles/company/page";
+
 
 const Home: React.FC = () => {
   const router = useRouter();
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
           <div className="text-center mb-16">
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Ozbekistondagi
+              O'zbekistondagi
               <br />
               <span className="text-yellow-400">Eng yaxshi ishlar</span>
             </h1>
