@@ -24,4 +24,15 @@ axiosInstance.interceptors.response.use(
   }
 );
 
+axiosInstance.interceptors.response.use(
+  (response) => response,
+  async (error) => {
+    if (error.response && error.response.status === 401) {
+      window.location.href = "/signin";
+      clearStorage();
+    }
+    return Promise.reject(error);
+  }
+);
+
 export default axiosInstance;
